@@ -1,7 +1,7 @@
 USB_BASIC := \
-  kmod-usb-core \
-  kmod-usb2 \
-  kmod-usb-hid
+    kmod-usb-core \
+    kmod-usb2 \
+    kmod-usb-hid
 
 USB_NIC := \
   kmod-usb-net \
