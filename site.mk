@@ -13,34 +13,6 @@ USB_NIC := \
 USB_WIFI := \
   kmod-rtl8192cu
 
-ifeq ($(GLUON_TARGET),x86-generic)
-  GLUON_SITE_PACKAGES += \
-    $(USB_BASIC) \
-    kmod-usb-ohci-pci \
-    $(USB_NIC)
-endif
-
-ifeq ($(GLUON_TARGET),x86-64)
-  GLUON_SITE_PACKAGES += \
-    $(USB_BASIC) \
-    $(USB_NIC) \
-    kmod-igb #APU2
-endif
-
-ifeq ($(GLUON_TARGET),brcm2708-bcm2708)
-  GLUON_SITE_PACKAGES += \
-    $(USB_BASIC) \
-    $(USB_NIC) \
-    $(USB_WIFI)
-endif
-
-ifeq ($(GLUON_TARGET),brcm2708-bcm2709)
-  GLUON_SITE_PACKAGES += \
-    $(USB_BASIC) \
-    $(USB_NIC) \
-    $(USB_WIFI)
-endif
-
 DEFAULT_GLUON_RELEASE := 1.4.0~$(GLUON_BRANCH)_$(shell date '+%Y%m%d')
 
 # Default priority for updates.
