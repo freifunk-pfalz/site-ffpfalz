@@ -1,7 +1,7 @@
 # mindestens die kommentierten Zeilen sind anzupassen
 FROM debian:stable-slim
 # Gluon Version anpassen
-ENV GLUON_VERSION=v2022.1.1
+ENV GLUON_VERSION=v2023.2.3
 # stable, beta oder experimental anpassen
 ENV BUILD_TYPE=beta
 # Version für firmware anpassen
