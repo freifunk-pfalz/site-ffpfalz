@@ -22,7 +22,7 @@ ENV GLUON_IMAGEDIR=/output
 ENV FORCE_UNSAFE_CONFIGURE=1
 
 RUN apt-get update
-RUN apt-get install -y subversion cmake help2man wget curl python3 rsync build-essential gnupg gawk unzip ncurses-dev git qemu-utils
+RUN apt-get install -y subversion cmake help2man wget curl python3 python3-distutils file rsync build-essential gnupg gawk unzip ncurses-dev git qemu-utils
 RUN apt-get update
 #RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py && python2.7 get-pip.py
 
